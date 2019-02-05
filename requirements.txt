@@ -1,5 +1,5 @@
-Flask==1.0.2
-Flask-SocketIO==3.1.2
+Flask
+Flask-SocketIO
 gunicorn
 psycopg2
 eventlet
