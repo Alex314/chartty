@@ -1,5 +1,5 @@
 Flask==1.0.2
 Flask-SocketIO==3.1.2
-gunicorn==19.7.1
+gunicorn
 psycopg2
 eventlet
