@@ -7,6 +7,7 @@ import logging
 
 
 app = Flask(__name__)
+app.logger.setLevel(logging.INFO)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'XYZ')
 socketio = SocketIO(app)
 

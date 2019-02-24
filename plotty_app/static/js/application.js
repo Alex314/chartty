@@ -1,7 +1,12 @@
 
 $(document).ready(function(){
     //connect to the socket server.
-    var socket = io.connect('https://' + document.domain + ':' + location.port + '/test', {rejectUnauthorized: false});
+    if (document.domain == "127.0.0.1"){
+        var socket = io.connect('http://localhost:' + location.port + '/test', {rejectUnauthorized: false});
+    }
+    else{
+        var socket = io.connect('https://' + document.domain + ':' + location.port + '/test', {rejectUnauthorized: false});
+    }
     var numbers_received = [];
 
     //receive details from server
