@@ -89,6 +89,11 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+bin/*
+share/*
+lib64
+pyvenv.cfg
+pip-selfcheck.json
 
 # Spyder project settings
 .spyderproject
